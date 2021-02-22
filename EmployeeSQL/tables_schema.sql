@@ -1,3 +1,10 @@
+DROP TABLE titles;
+DROP TABLE salaries;
+DROP TABLE dept_managers;
+DROP TABLE dept_employees;
+DROP TABLE departments;
+DROP TABLE employees;
+
 -- Create employees table
 CREATE TABLE employees(
     emp_no INT PRIMARY KEY NOT NULL,
@@ -44,16 +51,10 @@ CREATE TABLE salaries(
 SELECT * FROM salaries;
 
 -- Create titles table
-CREATE TABLE titles(
+CREATE TABLE titles (
     title_id VARCHAR(10) NOT NULL,
     title VARCHAR(30) NOT NULL,
-    FOREIGN KEY (title_id) REFERENCES employees(title_id)
+    CONSTRAINT pk_titles PRIMARY KEY (title_id)
 );
-SELECT * FROM titles;
 
-DROP TABLE departments;
-DROP TABLE dept_employees;
-DROP TABLE dept_managers;
-DROP TABLE employees;
-DROP TABLE salaries;
-DROP TABLE titles;
+SELECT * FROM titles;
