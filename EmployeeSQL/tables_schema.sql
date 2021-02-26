@@ -1,10 +1,3 @@
-DROP TABLE salaries;
-DROP TABLE dept_managers;
-DROP TABLE dept_employees;
-DROP TABLE departments;
-DROP TABLE employees;
-DROP TABLE titles;
-
 -- Create titles table
 CREATE TABLE titles (
     title_id VARCHAR(10) PRIMARY KEY,
