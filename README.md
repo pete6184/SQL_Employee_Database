@@ -11,7 +11,7 @@ Inspect the CSVs and sketch out an ERD of the tables.
 ### Data Engineering
 Use the information you have to create a table schema for each of the six CSV files. Remember to specify data types, primary keys, foreign keys, and other constraints.
 
-When importing the CSV files, make sure you import them in the same order as the tables were created.
+**When importing the CSV files, make sure you import them in the same order as the tables were created.**
 
 ### Data Analysis
 1. List the following details of each employee: employee number, last name, first name, sex, and salary.
