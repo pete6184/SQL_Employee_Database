@@ -1,8 +1,8 @@
 -- List the following details of each employee: employee number, last name, first name, gender, and salary.
-SELECT employees.emp_no, employees.last_name, employees.first_name, employees.gender, salaries.salary
+SELECT employees.emp_id, employees.last_name, employees.first_name, employees.gender, salaries.salary
 FROM employees
 INNER JOIN salaries
-ON employees.emp_no = salaries.emp_no
+ON employees.emp_id = salaries.emp_no
 ;
 
 -- List first name, last name, and hire date for employees who were hired in 1986.
@@ -12,21 +12,21 @@ WHERE hire_date LIKE '%1986'
 ;
 
 -- List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.
-SELECT d.dept_no, d.dept_name, dm.emp_no, e.last_name, e.first_name
+SELECT d.dept_id, d.dept_name, dm.emp_no, e.last_name, e.first_name
 FROM departments AS d
 JOIN dept_managers AS dm 
-ON d.dept_no = dm.dept_no
+ON d.dept_id = dm.dept_no
 JOIN employees AS e
-ON dm.emp_no = e.emp_no
+ON dm.emp_no = e.emp_id
 ;
 
 -- List the department of each employee with the following information: employee number, last name, first name, and department name.
 SELECT de.emp_no, e.last_name, e.first_name, d.dept_name
 FROM dept_employees AS de
 JOIN employees AS e
-ON de.emp_no = e.emp_no
+ON de.emp_no = e.emp_id
 JOIN departments AS d
-ON de.dept_no = d.dept_no
+ON de.dept_no = d.dept_id
 ;
 
 -- List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
@@ -40,9 +40,9 @@ AND last_name lIKE 'B%'
 SELECT de.emp_no, e.last_name, e.first_name, d.dept_name
 FROM dept_employees AS de
 JOIN employees AS e
-ON de.emp_no = e.emp_no
+ON de.emp_no = e.emp_id
 JOIN departments AS d
-ON de.dept_no = d.dept_no
+ON de.dept_no = d.dept_id
 WHERE d.dept_name = 'Sales'
 ;
 
@@ -50,9 +50,9 @@ WHERE d.dept_name = 'Sales'
 SELECT de.emp_no, e.last_name, e.first_name, d.dept_name
 FROM dept_employees AS de
 JOIN employees AS e
-ON de.emp_no = e.emp_no
+ON de.emp_no = e.emp_id
 JOIN departments AS d
-ON de.dept_no = d.dept_no
+ON de.dept_no = d.dept_id
 WHERE d.dept_name = 'Sales'
 OR d.dept_name = 'Development'
 ;
