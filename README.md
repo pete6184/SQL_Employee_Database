@@ -24,4 +24,4 @@ Use the information you have to create a table schema for each of the six CSV fi
 8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 
 
-![graph](EmployeeSQL/ERD Diagram.png)
+![png](EmployeeSQL/ERD Diagram.png)
