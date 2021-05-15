@@ -3,9 +3,8 @@
 ## Requirements & Summary
 This assignment introduced me to PGAdmin and creating SQL databases. In addition to using PGAdmin, I used VS Code and an ERD Builder (GenMyModel).
 
-In order to get the code to run properly, you need to first run the 'tables_schema.sql' file to create the database. Then you need to import in the .csv files in the order they are listed in the schema. Lastly, you can run the 'data_analysis.sql' to get the proper information for each query listed below.
+To get the code to run properly, you need to first run the 'tables_schema.sql' file to create the database. Then you need to import in the .csv files in the order they are listed in the schema. Lastly, you can run the 'data_analysis.sql' to get the proper information for each query listed below.
 
-This challenge went smoothly for me. The only real issue I ran into was getting the primary and foreign keys setup properly. Once I was able to work through that, the queries came very naturally to me. Overall, I really enjoyed this assignment and look forward to working in SQL databases.
 
 ## Background
 It is a beautiful spring day, and it is two weeks since I have been hired as a new data engineer at Pewlett Hackard. My first major task is a research project on employees of the corporation from the 1980s and 1990s. All that remain of the database of employees from that period are six CSV files.
